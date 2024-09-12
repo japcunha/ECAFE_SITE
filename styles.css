@@ -1,6 +1,6 @@
 :root {
     --main-color: #d3ad5f;
-    --black: #1313a;
+    --black: #13131a;
     --bg: #010103;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
     font-size: 10px;
@@ -14,7 +14,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.2s linear;
-
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
-    ;
+    max-width: 1200px;
 }
 
 .header {
@@ -34,6 +34,8 @@ section {
     right: 0;
     z-index: 99;
     border-bottom: var(--border);
+    background-color: var(--bg);
+
 }
 
 .header section {
@@ -44,14 +46,98 @@ section {
     padding-bottom: 1.5rem;
 }
 
-.navbar a{
-    margin: 0 rem;
+.navbar a {
+    margin: 0 1rem;
     font-size: 1.8rem;
     color: #fff;
 }
 
-.navbar a:hover{
-    color: var --main-color;
-    border-bottom: var --main-color;
-    ;
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.5rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.home-container {
+    background: url("./img/cafe.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 80rem;
+}
+
+.content h3 {
+    color: #fff;
+    font-size: 6rem;
+}
+
+.content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: 5rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.title span {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+}
+.about .row .content{
+    padding: 2rem;
+}
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+
+}
+.about .row .content p{
+font-size: 1.6rem;
+color: #fff;
+padding: 1rem 0;
+line-height: 1.7;
 }
